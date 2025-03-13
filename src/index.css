@@ -1,3 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+.landingPage{
+  background-image: url("../public/background.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat:no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  color: white;
+
+}
+.landingPage nav{
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.landingPage nav h2{
+   font-size: 1.8rem;
+   font-weight: 500;
+}
+.landingPage nav .navlist{
+  display: flex;
+  gap: 1.6rem;
+  margin-left: auto  ;
+  color: white;
+  }
+.navlist p a{
+  text-decoration: none;
+}
+.landing_container{
+  align-items: center;
+  display: flex;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  justify-content: space-between;
+  padding-inline: 3rem;
+}
+.landing_container h1{
+        font-size: 4rem;
+}
+.landing_container p{
+  font-size: 2rem;
+}
+.landing_container button{
+  height: 2rem;
+  padding: 1.3rem;
+  background-color: #D97500;
+  text-align: center;
+  border-radius: 0.5rem;
+  width: fit-content;
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+.landing_container img{
+     height: 70vh;
+     width: auto;
+     margin-top: 6rem;
+  }
+  .meetContainer {
+    display: flex;
+    padding-inline: 20px;
+    height: 80vh;
+    gap: 10vw;
+    justify-content: center;
+  }
+  .leftPanel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  
+  }
+  .rightPanel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightPanel > img {
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+  }
+  .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    text-align: center;
+    color: black;
+  
+  }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

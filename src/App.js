@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import LandingPage from './pages/LandingPage';
+import Authentication from './pages/Authentication';
+import { AuthProvider } from './contexts/AuthContext'; 
+import VideoMeetComponent from './pages/VideoMeet';
+import History from './pages/history';
+
+import HomeComponent from './pages/home'; 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return ( 
+    <BrowserRouter>  {/* ✅ Move BrowserRouter to the top */}
+      <AuthProvider> {/* ✅ Wrap AuthProvider inside BrowserRouter */}
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/auth" element={<Authentication />} />
+          <Route path="/:url" element={<VideoMeetComponent />} />
+          <Route path='/home's element={<HomeComponent />} />
+          <Route path='/history' element={<History />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
