@@ -1,5 +1,7 @@
 # Cosmic Video Call - Premium WebRTC Video Meeting Platform
 
+🔗 **Live Demo**: [https://my-video-call-one.vercel.app](https://my-video-call-one.vercel.app)
+
 A high-fidelity, premium cosmic-themed WebRTC video meeting application built with React, Node.js, Express, Socket.io, and MongoDB. The application offers a beautifully styled, high-performance interface with real-time video grids, chat boxes, session lobby controls, and hardware-accelerated layouts.
 
 ---
