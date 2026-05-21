@@ -11,7 +11,7 @@ import MicOffIcon from '@mui/icons-material/MicOff'
 import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare'
 import ChatIcon from '@mui/icons-material/Chat'
-const server='http://localhost:8080';
+const server = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
 
 const server_url = server;
 

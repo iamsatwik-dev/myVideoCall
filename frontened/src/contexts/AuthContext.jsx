@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 export const AuthContext = createContext({});
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8080";
 const client = axios.create({
-    baseURL: "http://localhost:8080/api/v1/user"
+    baseURL: `${BACKEND_URL}/api/v1/user`
 })
 
 
