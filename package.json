@@ -1,0 +1,14 @@
+{
+  "name": "my-video-call-orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install --prefix backened && npm install --prefix frontened",
+    "start-frontend": "npm start --prefix frontened",
+    "start-backend": "npm run dev --prefix backened",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
