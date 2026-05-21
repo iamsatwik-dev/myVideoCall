@@ -287,22 +287,22 @@ code {
 }
 
 /* Material UI Overrides for Home page input */
-.leftPanel :global(.MuiOutlinedInput-root) {
+.leftPanel .MuiOutlinedInput-root {
   color: white !important;
   background: rgba(255, 255, 255, 0.05) !important;
   border-radius: 14px;
   width: 280px;
 }
 
-.leftPanel :global(.MuiInputLabel-root) {
+.leftPanel .MuiInputLabel-root {
   color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.leftPanel :global(.MuiOutlinedInput-notchedOutline) {
+.leftPanel .MuiOutlinedInput-notchedOutline {
   border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
-.leftPanel :global(.MuiButton-root) {
+.leftPanel .MuiButton-root {
   border-radius: 14px !important;
   height: 56px;
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
@@ -313,7 +313,7 @@ code {
   box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3) !important;
 }
 
-.leftPanel :global(.MuiButton-root:hover) {
+.leftPanel .MuiButton-root:hover {
   background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%) !important;
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.45) !important;
 }
