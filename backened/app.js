@@ -13,7 +13,13 @@ const io = connectToSocket(server)
 const port = process.env.PORT || 8080;
 
 app.set("port", port);
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({
+    origin: (origin, callback) => {
+        // Allows any origin to resolve CORS with credentials during deployment and local development
+        callback(null, true);
+    },
+    credentials: true
+}));
 
 app.use(express.urlencoded({limit:"40kb" ,extended:"true"}))
 app.use(express.json({limit:"40kb"}))
