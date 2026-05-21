@@ -64,10 +64,12 @@ On the project configuration page, set these properties:
 * **Root Directory**: Click the **Edit** button next to Root Directory, select **`frontened`**, and click **Continue**.
 * **Build and Output Settings**: Keep all defaults (Vercel will run `npm run build` and output the production bundle automatically).
 
-### Step 3: Set Backend Environment Variable
-Open the **Environment Variables** accordion and add your backend connection URL:
-* **Key**: `REACT_APP_BACKEND_URL`
-* **Value**: `https://myvideocall.onrender.com`
+### Step 3: Set Backend and Build Environment Variables
+Open the **Environment Variables** accordion and add these two entries:
+1. **Key**: `REACT_APP_BACKEND_URL`  
+   **Value**: `https://myvideocall.onrender.com`
+2. **Key**: `CI`  
+   **Value**: `false` *(This is **CRITICAL**! By default, Vercel treats compiler warnings as errors and breaks the build. Setting `CI=false` allows React to build successfully with standard ESLint warnings).*
 
 ### Step 4: Deploy!
 1. Click **Deploy**.
