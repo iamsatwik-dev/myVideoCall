@@ -19,6 +19,14 @@ Frosted glass forms with elegant side-by-side graphics offering streamlined Sign
 ![Authentication Sign-In](./assets/login.png)
 ![Authentication Sign-Up](./assets/register.png)
 
+### 4. Join Meeting & Dashboard
+Enter your meeting code in a clean, glassmorphic input field on the dashboard to immediately host or join video rooms.
+![Join Meeting](./assets/dashboard.png)
+
+### 5. Meeting History
+Track all your previous video calls in a responsive, glowing grid of glassmorphic history cards with date-joined stamps.
+![Meeting History](./assets/history.png)
+
 ---
 
 ## ✨ Features
